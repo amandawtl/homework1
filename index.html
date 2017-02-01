@@ -6,10 +6,13 @@
 
 <hr size="5" align="center" noshade width="90%" color="66CC33">
  
-<h2>Common tricks to manipulate data:</h2><p align=right>by<a href="http://amandawtl.github.io/fancy-blog">Amanda Leung</a></p>
+<p align=right>by<a href="http://amandawtl.github.io/fancy-blog">Amanda Leung</a></p>
+ 
+<h2>Common tricks to manipulate data:</h2>
 <ol>
   <li>Truncated Y-axis</li>
   <li>Omitting Data</li>
+  <li>Fake Cumulative graph</li>
   <li>Non-Correlating Causation</li>
 </ol>
 
@@ -22,10 +25,11 @@
 </ul>
 <img src="1.1.png" border="2" color="DDDDDD"/>
  
-<p>It looks great! But something seems wrong...</p>
+<p>The interest rates are skyrocketing! And the bar sizes imply that rates in 2012 are several times higher than those in 2008.</p>
+<p>But something seems wrong...</p>
 <p>The y-axis is not start at 0.00%, so the difference is significant. What if the y-axis starts at 0.00% ?</p>
 <img src="1.2.png" border="2" color="DDDDDD"/>
-<p>The difference is small now.</p>
+<p>The interest rates are staying static now.</p>
 
 <br>
 <br>
@@ -44,8 +48,22 @@
 <br>
 <br>
 <br>
+
+<u><h2><p style="background-color:lightgrey">Type 3: Fake Cumulative graph</p></h2></u>
+<ul type=square>
+<li><p align="left">By creating cumulative graph, the data keep increasing, while in fact there is a decrease.</p></li>
+</ul>
+<img src="5.png" border="2" color="DDDDDD"/>
+<p>The cumulative annual revenue ismoving up and to the right, so things must be going well!</p>
+<p>When we draw a non-cumulative graph, the result is totally different...</p>
+<img src="6.png" border="2" color="DDDDDD"/>
+<p>Revenues have been declining for the past ten years!</p>
+
+<br>
+<br>
+<br>
  
-<u><h2><p style="background-color:lightgrey">Type 3: Non-Correlating Causation</p></h2></u>
+<u><h2><p style="background-color:lightgrey">Type 4: Non-Correlating Causation</p></h2></u>
 <ul type=square>
 <li><p align="left">Correlation doesn’t imply causation, but sometimes people care more about correlation rather than causation.</p></li>
 </ul>
